@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcu</title>
+    <script src="https://cdn.jsdelivr.net/npm/bem@latest/bem.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <!-- Cada vez que un usuario entre o se refresque la pagina, cambiaran los estados de dos numeros, se vera por pantalla dos numeros aleatorios del 1 al 100, a parte abra 4 botones de, suma, resta, multiplicacion y division  y hara el calculo seleccionado con los numeros que salieron aleatoriamente-->
+
+<!-- titulo -->
+
+<h1>Numeros aleatorios</h1>
+
+
+<!-- Numeros aleatorios -->
+<section class="numeros-aleatorios">
+    <span class="numeros-aleatorios__numero" id="numeroIzq"></span>
+    <span class="numeros-aleatorios__numero" id="numeroDerech"></span>
+</section>
+
+
+<!-- Boton de nuevos numeros -->
+<button class="numeros-aleatorios__btn-nuevos" id="btnNuevosNumeros">
+    Generar nuevos
+</button>
+
+<!-- Zona resutado, Sumar y restar -->
+<section class="resultado resultado--suma-resta">
+    <span class="resultado__valor resultado__valor--suma" id ="resultadoSuma"></span>
+    <span class="resultado__valor resultado__valor--resta" id ="resultadoResta"></span>
+</section>
+
+<!-- Zona botones, Sumar y restar -->
+<section class="botones botones--suma-resta">
+    <button class="botones__btn" id="btnSumar">Sumar</button>
+    <button class="botones__btn" id="btnRestar">Restar</button>   
+</section>
+
+
+<!-- Zona resutado, Sumar y restar -->
+<section class="resultado resultado--mult-div">
+    <span class="resultado__valor resultado__valor--mult" id ="resultadoMult"></span>
+    <span class="resultado__valor resultado__valor--div" id ="resultadoDiv"></span>
+</section>
+
+
+<!-- Zona botones, multiplicar y dividir -->
+<section class="botones botones--mult-div">
+    <button class="botones__btn" id="btnMult">Multiplicar</button>
+    <button class="botones__btn" id="btnDiv">Dividir</button>   
+</section>
+
+</body>
+
+    <script src="/js/index.js" defer></script>
+
+   
+</html>

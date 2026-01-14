@@ -1,0 +1,42 @@
+/* normalize. */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize.css/8.0.1/normalize.min.css');
+
+/* rest */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de la index.html */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* estilos de la index.html */
+
+.calculator {
+height: 100dvh;
+padding: 30px;
+display: grid;
+grid-template-columns: 100%;
+}
+
+
+.calculator__title {
+}
+
+.calculator__numbers {
+display: ;
+justify-content: space-around;
+
+}
+
+.calculator__ {
