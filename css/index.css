@@ -9,34 +9,94 @@
     box-sizing: border-box;
 }
 
-/* estilos de la index.html */
+/* body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin-top: 2%;
+}
+
+
+/* BEM: Numeros Aleatorios */
+.numeros-aleatorios {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+}
+.numeros-aleatorios__numero {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.numeros-aleatorios__btn-nuevos {
+    margin: 2rem auto;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    display: block;
 }
 
-/* estilos de la index.html */
+/* BEM: Resultado */
+.resultado {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.resultado__valor {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.resultado__valor--suma {
+    color: green;
+}
+.resultado__valor--resta {
+    color: red;
+}
+.resultado__valor--mult {
+    color: blue;
+}
+.resultado__valor--div {
+    color: orange;
+}
 
-.calculator {
-height: 100dvh;
-padding: 30px;
-display: grid;
-grid-template-columns: 100%;
+/* BEM: Botones */
+.botones {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+.botones__btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    color: #fff;
+    transition: background 0.2s;
+}
+.botones__btn#btnSumar {
+    background: #27ae60;
+}
+.botones__btn#btnRestar {
+    background: #e74c3c;
+}
+.botones__btn#btnMult {
+    background: #2980b9;
+}
+.botones__btn#btnDiv {
+    background: #f39c12;
+}
+.botones__btn:hover#btnSumar {
+    background: #219150;
+}
+.botones__btn:hover#btnRestar {
+    background: #c0392b;
+}
+.botones__btn:hover#btnMult {
+    background: #1c5d8c;
+}
+.botones__btn:hover#btnDiv {
+    background: #c87f0a;
 }
 
 
-.calculator__title {
-}
-
-.calculator__numbers {
-display: ;
-justify-content: space-around;
-
-}
-
-.calculator__ {

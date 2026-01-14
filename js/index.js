@@ -26,17 +26,30 @@ console.log("Division:", division(6, 3));
 
 
 // Get HTML elements by ID
-const numeroIzq = document.getElementById('numeroIzq');
-const numeroDerech = document.getElementById('numeroDerech');
-const btnNuevosNumeros = document.getElementById('btnNuevosNumeros');
+
+import { suma, resta, multiplicacion, division } from '../operaciones-aritmeticas.mjs';
+
+//seleccionar los elementos del DOM
+// zona numeros aleatorios
+const numero1 = document.getElementById('numeroIzq');
+const numero2 = document.getElementById('numeroDerech');
+
+// zona boton numeros nuevos
+const nuevoBtn = document.getElementById('btnNuevosNumeros');
+
+
+// zona botones y resultado sumar y restar
 const resultadoSuma = document.getElementById('resultadoSuma');
 const resultadoResta = document.getElementById('resultadoResta');
 const btnSumar = document.getElementById('btnSumar');
 const btnRestar = document.getElementById('btnRestar');
+
+// zona botones y resultado multiplicar y dividir
 const btnMultiplicar = document.getElementById('resultadoMult');
 const resultadoMult = document.getElementById('resultadoDiv');
 const resultadoDiv = document.getElementById('btnMult');
 const btnDividir = document.getElementById('btnDiv');
+
 
 
 // Add event listeners
