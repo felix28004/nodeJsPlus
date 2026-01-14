@@ -12,6 +12,8 @@
 /* body */
 body {
     margin-top: 2%;
+    background-color: #bc82f2;
+    text-align: center;
 }
 
 
@@ -68,35 +70,43 @@ body {
     font-size: 1.1rem;
     cursor: pointer;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 4px;
     margin: 0 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.07);
     color: #fff;
     transition: background 0.2s;
 }
 .botones__btn#btnSumar {
     background: #27ae60;
+    box-shadow: 10px 4px 12px rgb(10, 70, 35);
 }
 .botones__btn#btnRestar {
     background: #e74c3c;
+    box-shadow: 10px 4px 12px #7a0e02;
 }
 .botones__btn#btnMult {
     background: #2980b9;
+    box-shadow: 10px 4px 12px #0b2c45;
 }
 .botones__btn#btnDiv {
     background: #f39c12;
+    box-shadow: 10px 4px 12px #7a4f0a;
 }
 .botones__btn:hover#btnSumar {
     background: #219150;
+    box-shadow: none;
 }
 .botones__btn:hover#btnRestar {
     background: #c0392b;
+    box-shadow: none;
 }
 .botones__btn:hover#btnMult {
     background: #1c5d8c;
+    box-shadow: none;
 }
 .botones__btn:hover#btnDiv {
     background: #c87f0a;
+    box-shadow: none;
 }
 
 
