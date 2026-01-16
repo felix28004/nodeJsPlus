@@ -1,6 +1,18 @@
 /* normalize. */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize.css/8.0.1/normalize.min.css');
 
+/* variables :root */
+:root {
+    --margin-small: 1rem;
+    --margin-medium: 2rem;
+    --margin-button: 0 1rem;
+    --transition-fast: 0.2s;
+    --shadow-small: 0px 2px 6px rgba(0,0,0,0.07);
+    --shadow-button-offset-x: 10px;
+    --shadow-button-offset-y: 4px;
+    --shadow-button-blur: 12px;
+}
+
 /* rest */
 
 * {
@@ -21,7 +33,7 @@ body {
 .numeros-aleatorios {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin-small);
     justify-content: center;
     align-items: center;
 }
@@ -30,7 +42,7 @@ body {
     font-weight: bold;
 }
 .numeros-aleatorios__btn-nuevos {
-    margin: 2rem auto;
+    margin: var(--margin-medium) auto;
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
     display: block;
@@ -38,12 +50,12 @@ body {
 
 /* BEM: Resultado */
 .resultado {
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin-small);
     text-align: center;
 }
 .resultado__valor {
     font-size: 1.5rem;
-    margin-right: 1rem;
+    margin-right: var(--margin-small);
 }
 .resultado__valor--suma {
     color: green;
@@ -62,7 +74,7 @@ body {
 .botones {
     display: flex;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: var(--margin-medium) 0;
     justify-content: center;
 }
 .botones__btn {
@@ -71,26 +83,26 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    margin: 0 1rem;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.07);
+    margin: var(--margin-button);
+    box-shadow: var(--shadow-small);
     color: #fff;
-    transition: background 0.2s;
+    transition: background var(--transition-fast);
 }
 .botones__btn#btnSumar {
     background: #27ae60;
-    box-shadow: 10px 4px 12px rgb(10, 70, 35);
+    box-shadow: var(--shadow-button-offset-x) var(--shadow-button-offset-y) var(--shadow-button-blur) rgb(10, 70, 35);
 }
 .botones__btn#btnRestar {
     background: #e74c3c;
-    box-shadow: 10px 4px 12px #7a0e02;
+    box-shadow: var(--shadow-button-offset-x) var(--shadow-button-offset-y) var(--shadow-button-blur) #7a0e02;
 }
 .botones__btn#btnMult {
     background: #2980b9;
-    box-shadow: 10px 4px 12px #0b2c45;
+    box-shadow: var(--shadow-button-offset-x) var(--shadow-button-offset-y) var(--shadow-button-blur) #0b2c45;
 }
 .botones__btn#btnDiv {
     background: #f39c12;
-    box-shadow: 10px 4px 12px #7a4f0a;
+    box-shadow: var(--shadow-button-offset-x) var(--shadow-button-offset-y) var(--shadow-button-blur) #7a4f0a;
 }
 .botones__btn:hover#btnSumar {
     background: #219150;
